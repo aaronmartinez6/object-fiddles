@@ -8,9 +8,12 @@
 
   //Code here
 
+let me = {
+  name: "Aaron",
+  age: '32',
+}
 
-
-
+alert(me.name)
 
 
 //NEXT PROBLEM
@@ -18,29 +21,42 @@
 
 
 
-//Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
+//Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. 
+// Have the values to those keys be your favorite thing in that category.
 
   //Code here
 
 
+let favoriteThings = {
+  band: "Same Hunt",
+  food: "Sushi",
+  person: "Erica",
+  book: "BOM",
+  movie: "Shooter",
+  holiday: "Christmas"
+
+}
 
 
 
 
-
-//After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
+//After you've made your object, add another key named 'car' with the value being your favorite car and then 
+// another key named 'brand' with the value being your favorite brand.
 
   //Code here
 
 
+favoriteThings.car = "Tesla"
+favoriteThings.brand = "Apple"
 
 
-
-//Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
+//Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value 
+// of the book key in your favoriteThings object to be 'Harry Potter'.
 
   //Code here
 
-
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = "Harry Potter"
 
 
 
@@ -60,8 +76,12 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
+let backPack = {}
 
+var item = "firstPocket"
 
+backPack[item] = "chapstick"
+backPack.color = "green"
 
 
 
@@ -69,7 +89,7 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
- 
+ alert(backPack)
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -80,7 +100,7 @@ Instead, console.log your whole backPack object and then check out the console.
   //Code here
 
 
-
+console.log(backPack)
 
 
 //NEXT PROBLEM
@@ -101,7 +121,8 @@ var user2 = {
 
   //Code Here
 
-
+user2.name = "Tyler S. McGinnis"
+user2.email = "tyler.mcginnis@devmounta.in"
 
 
 
@@ -123,6 +144,8 @@ var user2 = {
 
   //Code Here
 
+let methodCollection = {}
+
 
 
 
@@ -135,6 +158,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
   //Code Here
 
 
+methodCollection.alertHello = function() { alert("hello")}
+methodCollection.logHello = function() {console.log("hello")}
 
 
 
@@ -143,7 +168,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
   //Code Here
 
 
-
+methodCollection.alertHello()
+methodCollection.logHello()
 
 
 
@@ -159,7 +185,9 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
   //Code Here
 
 
-
+let makePerson = (name, birthday, ssn) => {
+  return {name, birthday,ssn}
+}
 
 
   
@@ -169,8 +197,11 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 
 
-// Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
+// Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card 
+// object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
   //Code Here
 
-
+let makeCard = (cardNumber, expirationDate, securityCode) => {
+  return {cardNumber, expirationDate, securityCode}
+}
